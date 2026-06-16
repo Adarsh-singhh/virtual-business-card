@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    padding:20px;
+}
+
+.card{
+    background:#fff;
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    transition:0.4s;
+    animation:fadeIn 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #4facfe;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#333;
+}
+
+h3{
+    color:#4facfe;
+    margin:10px 0;
+}
+
+.bio{
+    color:#666;
+    margin:15px 0;
+}
+
+.contact p{
+    margin:8px 0;
+    color:#444;
+}
+
+.contact i{
+    color:#4facfe;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    text-decoration:none;
+    color:#333;
+    font-size:28px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.socials a:hover{
+    color:#4facfe;
+    transform:scale(1.2);
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#4facfe;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0077ff;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:500px){
+
+    .card{
+        width:100%;
+        padding:20px;
+    }
+
+    .profile{
+        width:110px;
+        height:110px;
+    }
+}
